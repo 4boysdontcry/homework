@@ -1,0 +1,28 @@
+html, body {font-size: 14px;}
+.wrapper {max-width: 2000px; margin: auto; /* padding: 0 .5rem; */}
+
+
+/* top-navigation */
+.top-navi-wrapper {position: fixed; z-index: 100; width: 100%; background-color: black; color: #f9f9f9;}
+/* .top-navi-wrapper > .top-navi-wrap {width: 100%; height: 50px;} */
+.top-navi-wrapper > .top-navi-wrap > .top-navi {float: left; padding: 1rem 1rem; font-size: 1.125em; }
+.top-navi-wrapper > .top-navi-wrap > .top-navi:hover {background-color: #ccc;}
+.top-navi-wrapper > .top-navi-wrap > .top-navi:hover > .sub-wrapper {width: 150px; height: 100px; z-index: 2;}
+.top-navi-wrapper > .top-navi-wrap > a .top-icon {float: right; padding: 1rem 1rem;}
+.top-navi-wrapper > .top-navi-wrap > a .top-icon:hover {background-color: crimson;}
+
+.sub-wrapper {position: absolute; top: 3.125rem; left: 22.4rem;  height: 0; transition: height 0.25s; overflow: hidden; z-index: 1; background-color: #ccc;}
+.sub-wrapper > .sub-navi-wrap {font-size: 1.2rem; text-align: center;}
+.sub-wrapper > .sub-navi-wrap > .sub-navi {padding: .325em 0;}
+
+/* main-img */
+.main-wrapper {width: 100%;}
+.main-wrapper > .main-wrap {position: relative; width: 100%;}
+.main-wrapper > .main-wrap > .main-img {width: 100%;}
+.main-wrapper > .main-wrap > .main-title {position: absolute; text-align: center; left: 35%; bottom: 7%; color: #f9f9f9; font-size: 2rem;}
+.main-wrapper > .main-wrap > .main-title > .main-article {font-size: 1.5rem;}
+
+/* guide */
+.guide-wrapper > .guide-wrap {width: 100%; margin: 5em 0; text-align: center;}
+.guide-wrapper > .guide-wrap > .guide-title {font-size: 2em; letter-spacing: 0.2em;}
+.guide-wrapper > .guide-wrap > .guide-article > .sub-title {padding: 3em 0; font-style: italic; color: #444;}
