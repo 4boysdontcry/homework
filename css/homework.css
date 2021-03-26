@@ -1,28 +1,93 @@
-html, body {font-size: 14px;}
-.wrapper {max-width: 2000px; margin: auto; /* padding: 0 .5rem; */}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+/* font-family: 'Playfair Display', serif; */
 
 
-/* top-navigation */
-.top-navi-wrapper {position: fixed; z-index: 100; width: 100%; background-color: black; color: #f9f9f9;}
-/* .top-navi-wrapper > .top-navi-wrap {width: 100%; height: 50px;} */
-.top-navi-wrapper > .top-navi-wrap > .top-navi {float: left; padding: 1rem 1rem; font-size: 1.125em; }
-.top-navi-wrapper > .top-navi-wrap > .top-navi:hover {background-color: #ccc;}
-.top-navi-wrapper > .top-navi-wrap > .top-navi:hover > .sub-wrapper {width: 150px; height: 100px; z-index: 2;}
-.top-navi-wrapper > .top-navi-wrap > a .top-icon {float: right; padding: 1rem 1rem;}
-.top-navi-wrapper > .top-navi-wrap > a .top-icon:hover {background-color: crimson;}
 
-.sub-wrapper {position: absolute; top: 3.125rem; left: 22.4rem;  height: 0; transition: height 0.25s; overflow: hidden; z-index: 1; background-color: #ccc;}
-.sub-wrapper > .sub-navi-wrap {font-size: 1.2rem; text-align: center;}
-.sub-wrapper > .sub-navi-wrap > .sub-navi {padding: .325em 0;}
+/********************* default ***********************/
+html, body {font: 16 'Playfair Display'; color: #121212; letter-spacing: .3em;}
+.wrapper {max-width: 1200px; margin: auto; padding: 3em 0; border-bottom: 1px solid #ccc;} /* about 부터 사용 */
+.wrapper2 {max-width: 1200px; margin: auto; padding: 3em 1em;}
+a.anchor {height: 0; line-height: 0; display: inline;}
 
-/* main-img */
-.main-wrapper {width: 100%;}
-.main-wrapper > .main-wrap {position: relative; width: 100%;}
-.main-wrapper > .main-wrap > .main-img {width: 100%;}
-.main-wrapper > .main-wrap > .main-title {position: absolute; text-align: center; left: 35%; bottom: 7%; color: #f9f9f9; font-size: 2rem;}
-.main-wrapper > .main-wrap > .main-title > .main-article {font-size: 1.5rem;}
 
-/* guide */
-.guide-wrapper > .guide-wrap {width: 100%; margin: 5em 0; text-align: center;}
-.guide-wrapper > .guide-wrap > .guide-title {font-size: 2em; letter-spacing: 0.2em;}
-.guide-wrapper > .guide-wrap > .guide-article > .sub-title {padding: 3em 0; font-style: italic; color: #444;}
+/********************* header ***********************/
+.header-wrapper {position: fixed; width: 100%; background-color: #f9f9f9; z-index: 10; box-shadow: 0 0 6px rgb(77, 75, 75);}
+.header-wrapper > .header-wrap {padding: 1em; font-size: .925em;}
+.header-wrapper > .header-wrap > .title {float: left; margin-left: 1em; padding: .4em .6em;}
+.header-wrapper > .header-wrap > .navi-wrap {float: right;}
+.header-wrapper > .header-wrap > .navi-wrap > .navi {float: left; margin-right: 2em;}
+.header-wrapper > .header-wrap > .navi-wrap > .navi a {padding: .4em .6em;}
+.header-wrapper > .header-wrap > .navi-wrap > .navi:hover {background-color: #eee;}
+
+
+/********************* main ***********************/
+.main-wrapper {max-width: 1600px; margin: auto;}
+.main-wrapper > .main-wrap {position: relative;}
+.main-wrapper > .main-wrap > img {}
+.main-wrapper > .main-wrap > .ment {position: absolute; font-size: 2.5em; color: #444; left: .5em; bottom: .5em;}
+
+
+/********************* about ***********************/
+.about-wrapper {margin: 2em 0;}
+.about-wrapper > .wrapper {border-bottom: 1px solid #ccc;}
+.about-wrapper > .wrapper > .img-wrap {float: left; width: 48%; margin: 0 4% 4% 0; padding: 1em;}
+.about-wrapper > .wrapper > .img-wrap > .about-img {width: 100%; opacity: .7;}
+
+.about-wrapper > .wrapper > .cont-wrap {float: right; width: 48%; text-align: center; margin-top: 3em; padding: 1em;}
+.about-wrapper > .wrapper > .cont-wrap > h2 {font-size: 2em;}
+.about-wrapper > .wrapper > .cont-wrap > h3 {font-size: 1em; padding: 2em 0;}
+.about-wrapper > .wrapper > .cont-wrap > p { text-align: justify; letter-spacing: 0; line-height: 1.5; margin-bottom: 1em;}
+.about-wrapper > .wrapper > .cont-wrap > p:nth-child(4) {color: #555;}
+.about-wrapper > .wrapper > .cont-wrap > p > span {background-color: #eee; padding: .2em .2em;}
+
+
+/********************* menu ***********************/
+.menu-wrapper {}
+.menu-wrapper > .wrapper > .menu-wrap {float: left; width: 50%; padding: 1em; margin-top: 3em;}
+.menu-wrapper > .wrapper > .menu-wrap > .menu-title {font-size: 2em; text-align: center; margin-bottom: 1.5em;}
+.menu-wrapper > .wrapper > .menu-wrap > .table > .menu {text-align: left;}
+.menu-wrapper > .wrapper > .menu-wrap > .table > .menu > h4 {font-size: 1.25em; font-weight: bold; line-height: 3;}
+.menu-wrapper > .wrapper > .menu-wrap > .table > .menu > p {font-size: 1em; margin-bottom: 2em; letter-spacing: -1px;}
+
+.menu-wrapper > .wrapper > .img-wrap {float: right; width: 50%; padding: 1em;}
+.menu-wrapper > .wrapper > .img-wrap > .menu-img {width: 100%; opacity: .7;}
+
+
+/********************* contact ***********************/
+.contact-wrapper {}
+.contact-wrapper > .wrapper2 {}
+.contact-wrapper > .wrapper2 > .cont-wrap {width: 100%; text-align: left;}
+.contact-wrapper > .wrapper2 > .cont-wrap > * { margin-bottom: 1em;}
+.contact-wrapper > .wrapper2 > .cont-wrap > .title {font-size: 3em;}
+.contact-wrapper > .wrapper2 > .cont-wrap > p:nth-child(2) {letter-spacing: -1px; line-height: 1;}
+.contact-wrapper > .wrapper2 > .cont-wrap > address{letter-spacing: -1px; font-weight: bold; font-size: 1.125em; color: #607d8b;}
+.contact-wrapper > .wrapper2 > .cont-wrap > p:nth-child(4) {letter-spacing: -1px;}
+
+.contact-wrapper > .wrapper2 > form {width: 100%;}
+.contact-wrapper > .wrapper2 > form > input {width: 100%; margin: 1em 0; border-bottom: 1px solid #444;}
+.contact-wrapper > .wrapper2 > form > button {background-color: #eee; padding: 0.425em 0.725em;}
+
+
+/********************* footer ***********************/
+.footer-wrap {width: 100%; background-color: #eee; padding: 3em;}
+.footer-wrap > .copyright {width: 100%; letter-spacing: -1px; text-align: center;}
+.footer-wrap > .copyright a:hover {text-decoration: underline;}
+
+
+/********************* response ***********************/
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 768px){
+    .header-wrapper > .header-wrap > .navi-wrap {display: none;}
+
+    .about-wrapper > .wrapper > .img-wrap {display: none;}
+    .about-wrapper > .wrapper > .cont-wrap {width: 100%;}
+
+    .menu-wrapper > .wrapper > .menu-wrap {width: 100%;}
+    .menu-wrapper > .wrapper > .img-wrap {width: 100%;}
+}
+
+@media (max-width: 574px){
+}
