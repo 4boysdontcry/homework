@@ -4,7 +4,7 @@
 
 
 /********************* default ***********************/
-html, body {font-size: 16; font-family: 'Playfair Display'; color: #121212; letter-spacing: .2em;}
+html, body {font-size: 16; font-family: 'Playfair Display', serif; color: #121212; letter-spacing: .2em;}
 .wrapper {max-width: 1200px; margin: auto; padding: 3em 0; border-bottom: 1px solid #ccc;} /* about 부터 사용 */
 .wrapper2 {max-width: 1200px; margin: auto; padding: 3em 1em;}
 a.anchor {height: 0; line-height: 0; display: inline;}
