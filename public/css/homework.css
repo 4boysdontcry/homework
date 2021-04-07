@@ -79,7 +79,7 @@ a.anchor {height: 0; line-height: 0; display: inline;}
 }
 
 @media (max-width: 768px){
-    .header-wrapper > .header-wrap > .navi-wrap {display: none;}
+    .header-wrapper > .navi-wrap {display: none;}
 
     .about-wrapper > .wrapper > .img-wrap {display: none;}
     .about-wrapper > .wrapper > .cont-wrap {width: 100%;}
